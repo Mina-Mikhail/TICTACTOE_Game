@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/set_player_name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/player1_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+
+        <EditText
+            android:id="@+id/new_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/player_1"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:maxLength="10"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/player2_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1_name_layout"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/new_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/player_2"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:maxLength="10" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player2_name_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="@string/cancel"
+            android:background="@drawable/ripple_effect_color_accent"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="@string/ok"
+            android:textAlignment="center"
+            android:background="@drawable/ripple_effect_color_primary"
+            android:textColor="#fff"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

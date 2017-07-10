@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TIC TAC TOE</string>
+    <string name="let_s_play">Let\'s Play</string>
+    <string name="play_icon">play icon</string>
+    <string name="game_logo">Game Logo</string>
+    <string name="player_1">Player 1</string>
+    <string name="zero">0</string>
+    <string name="player_2">Player 2</string>
+    <string name="player_two_image">player two image</string>
+    <string name="player_one_image">player one image</string>
+    <string name="cancel">cancel</string>
+    <string name="set_player_name">Set Player Names</string>
+    <string name="ok">ok</string>
+    <string name="check_place">check place</string>
+    <string name="new_game">new game</string>
+    <string name="reset">reset</string>
+    <string name="highest_score">Highest Score:</string>
+</resources>
